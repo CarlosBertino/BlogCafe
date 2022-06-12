@@ -2,6 +2,7 @@
     --colorPrimario: #784D3C;
     --blanco:#ffffff;
     --negro:#000000;
+    --gis: #e1e1e1;
     
     --fuenteHeading: 'PT Sans', sans-serif;
     --fuenteParrafos: 'Open Sans', sans-serif;
@@ -25,30 +26,10 @@ body {
 
 /*  GLOBALES */
 
-.contenedor {
+.contenedor1{
     max-width: 120rem;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
-    padding: 2.5rem 0;
-    color: var(--blanco);
-    display: block;
-    text-align: center;
-}
-
-.nav{
-    display: grid;
-    margin-top: 1rem;
-}
-
-@media (min-width: 768px) {
-    .contenedor{
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .nav{
-        display: block;
-    }
 }
 
 a {
@@ -92,8 +73,12 @@ img {
 
 /* UTILIDADES */
 
-.no-margin {
-    margin: 0;
+.margin1 {
+    margin: 1rem 0;
+}
+
+.margin2 {
+    margin: 3rem 0 0 0;
 }
 
 .no-padding {
@@ -104,17 +89,37 @@ img {
     text-align: center;
 }
 
+.border{
+    border-bottom: solid 1px var(--gis);
+    margin-bottom: 2rem;
+}
+
+.border:last-of-type{
+    border-bottom: none;
+    margin-bottom: none;
+}
+
 /* HEADER */
 
 .header {
     background-image: url(../img/banner.jpg);
-    height: 60rem;
+    height: 55rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;     /* Tiene 2 propiedades, vertical y horizontal. Podria ser center center */
 }
 
-.header__texto{
+.header__bloque {
+    color: var(--blanco);
+    text-align: center;
+    padding: 2.5rem 0 0 0;
+}
+
+.nav{
+    display: grid;
+}
+
+.header__titular{
     color: var(--blanco);
     text-align: center;
     padding: 1rem 0;
@@ -122,11 +127,67 @@ img {
 }
 
 @media (min-width: 768px) {
-    .header__texto{
-         margin: 11rem 0rem;
+    .header__bloque{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5rem 0;
+    }
+    .nav{
+        display: flex;
+        gap: 1rem;
+    }
+    .header__titular{
+        margin: 8rem 0rem;
+   }
+}
+
+/* MAIN */
+
+.contenedor2{
+    display: block;
+}
+
+.contenedor2 a{
+    font-size: 1.4rem;
+}
+
+
+@media (min-width: 768px) {
+    .contenedor2{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 3rem;
     }
 }
 
-.margin-titulo {
-    margin-top: 3rem;
+.sidebar__cursos p{
+    font-weight: bold;
+}
+
+.boton-main, .boton-sidebar{
+    display: block;
+    text-transform: uppercase;
+    color: var(--blanco);
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+    padding: 1rem;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.boton-main{
+    background-color: var(--colorPrimario);
+}
+
+.boton-sidebar{
+    background-color: var(--negro);
+}
+
+@media (min-width: 768px) {
+    .boton-main, .boton-sidebar{
+        width: 20rem;
+    }
 }
