@@ -204,3 +204,27 @@ ul {
         margin-top: 0;
     }
 }
+
+/* FOOTER */
+
+.footer{
+    background-color: var(--negro);
+}
+
+.footer__bloque {
+    text-align: center;
+    padding: 2.5rem 0 0 0;
+}
+
+@media (min-width: 768px) {
+    .footer__bloque{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5rem 0;
+    }
+    .nav{
+        display: flex;
+        gap: 1rem;
+    }
+}
