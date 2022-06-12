@@ -71,6 +71,10 @@ img {
     width: 100%;
 }
 
+ul {
+    list-style: none;
+}
+
 /* UTILIDADES */
 
 .margin1 {
@@ -161,6 +165,12 @@ img {
     }
 }
 
+/* SIDEBAR */
+
+.sidebar{
+    border-top: solid 1px var(--gis);
+}
+
 .sidebar__cursos p{
     font-weight: bold;
 }
@@ -179,15 +189,18 @@ img {
 }
 
 .boton-main{
-    background-color: var(--colorPrimario);
+    background-color: var(--negro);
 }
 
 .boton-sidebar{
-    background-color: var(--negro);
+    background-color: var(--colorPrimario);
 }
 
 @media (min-width: 768px) {
     .boton-main, .boton-sidebar{
         width: 20rem;
+    }
+    .sidebar{
+        margin-top: 0;
     }
 }
