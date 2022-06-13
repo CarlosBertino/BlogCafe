@@ -28,7 +28,8 @@ body {
 
 .contenedor1{
     max-width: 120rem;
-    width: 80%;
+    width: 90%;
+    /* width: min(90%, 120rem); */       /* Esta línea reemplaza las 2 anteriores. Aplica el mínimo según el ancho: 90% o 120rem */
     margin: 0 auto;
 }
 
@@ -44,11 +45,11 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 4.8rem;
+    font-size: 4.2rem;
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 3.8rem;
 }
 
 h3 {
@@ -101,6 +102,7 @@ ul {
 .border:last-of-type{
     border-bottom: none;
     margin-bottom: none;
+    margin-bottom: 4rem;
 }
 
 /* HEADER */
@@ -221,7 +223,7 @@ ul {
         display:flex;
         justify-content: space-between;
         align-items: center;
-        padding: 5rem 0;
+        padding: 3rem 0;
     }
     .nav{
         display: flex;
