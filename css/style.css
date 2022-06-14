@@ -10,6 +10,8 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;               /* 1 rem = 10 px */
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -165,6 +167,37 @@ ul {
         grid-template-columns: 2fr 1fr;
         gap: 3rem;
     }
+}
+
+/* SECCIÓN NOSOTROS */
+
+.nosotros {
+    text-align: center;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.nosotros__grid {
+    display: block;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .nosotros__grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        }
+}
+
+.nosotros__img {
+    width: 100%;
+    max-width: 76rem;
+}
+
+.nosotros__texto{
+    text-align: justify;
+    margin: 0;
 }
 
 /* SIDEBAR */
