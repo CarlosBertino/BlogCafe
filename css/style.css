@@ -48,8 +48,8 @@ h1 {
     font-size: 4.2rem;
 }
 
-h2 {
-    font-size: 3.8rem;
+h2 {                         /* Ver media querie */
+    font-size: 3.5rem;
 }
 
 h3 {
@@ -101,7 +101,7 @@ ul {
 
 .border:last-of-type{
     border-bottom: none;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 /* HEADER */
@@ -211,7 +211,7 @@ ul {
 
 .contenedor-cursos, .nosotros{
     max-width: 120rem;
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
     text-align: center;
 }
@@ -225,10 +225,12 @@ ul {
 .cursos__grid {
     border-bottom: solid 1px var(--gis);
     margin-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .cursos__grid:last-of-type{
     border-bottom: none;
+    padding-bottom: 0;
 }
 
 
@@ -260,9 +262,14 @@ ul {
 }
 
 .cursos__texto {
-    text-align: justify;
+    text-align: start;
 }
 
+/* SECCIÓN BLOG */
+
+.img__blog {
+    margin-top: 3rem;
+}
 
 /* FOOTER */
 
