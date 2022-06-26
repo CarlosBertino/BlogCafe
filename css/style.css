@@ -304,8 +304,8 @@ ul {
 /* FORMULARIO DE CONTACTO */
 
 .formulario{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    gap: 1rem;
     margin: 2rem 0;
 }
 
@@ -316,16 +316,11 @@ ul {
 
 .campo__label{
     font-weight: bold;
-    flex: 0 0 8rem;
 }
 
 .campo__input{
     margin: 0 auto;
-    flex: 0 0 26rem;
-}
-
-.campo__input--textarea{
-
+    width: 100%;
 }
 
 .boton-enviar{
@@ -334,5 +329,17 @@ ul {
     color: var(--blanco);
     padding: 1rem;
     font-weight: bold;
-    margin: 1rem auto;
+    grid-column: 1/3;
+    width: 100%;
+    margin: 1rem auto 0rem auto;
+}
+
+.boton-enviar:hover{
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .boton-enviar{
+        width: 12rem;   
+    } 
 }
