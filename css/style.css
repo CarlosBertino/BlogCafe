@@ -94,6 +94,11 @@ ul {
     text-align: center;
 }
 
+.centrar-formulario{
+    display: flex;
+    justify-content: center;
+}
+
 .border{
     border-bottom: solid 1px var(--gis);
     margin-bottom: 2rem;
@@ -293,4 +298,41 @@ ul {
         display: flex;
         gap: 1rem;
     }
+}
+
+
+/* FORMULARIO DE CONTACTO */
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.campo{
+    display: flex;
+    margin: .5rem 0;
+}
+
+.campo__label{
+    font-weight: bold;
+    flex: 0 0 8rem;
+}
+
+.campo__input{
+    margin: 0 auto;
+    flex: 0 0 26rem;
+}
+
+.campo__input--textarea{
+
+}
+
+.boton-enviar{
+    text-transform: uppercase;
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 1rem;
+    font-weight: bold;
+    margin: 1rem auto;
 }

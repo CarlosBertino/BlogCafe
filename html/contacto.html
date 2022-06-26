@@ -39,10 +39,35 @@
         </div>
     </header>
 
-    <main class="contenedor1 nosotros">
-        <h3>Formulario de contacto</h3>
+    <main class="contenedor1">
+        <h3 class="centrar-texto">Contacto</h3>
 
+        <img class="formulario__img" src="../img/contacto.jpg" alt="">
         
+            <div class="centrar-formulario">
+                <form action="#" class="formulario">
+                        <div class="campo">
+                        <label class="campo__label" for="nombre">Nombre</label>
+                        <input class="campo__input" type="text" placeholder="Nombre" id="nombre">
+                        </div>
+                        <div class="campo">
+                        <label class="campo__label" for="telefono">Teléfono</label>
+                        <input class="campo__input" type="tel" placeholder="Teléfono" id="telefono">
+                        </div>
+                        <div class="campo">
+                        <label class="campo__label" for="correo">Correo</label>
+                        <input class="campo__input" type="email" placeholder="Email" id="correo">
+                        </div>
+                        <div class="campo">
+                        <label class="campo__label" for="mensaje">Mensaje</label>
+                        <textarea class="campo__input--textarea" name="" id="mensaje" placeholder="Dejanos tu mensaje" cols="30" rows="10"></textarea>
+                        </div>
+                
+                        <div class="campo">
+                        <input class="boton-enviar" type="submit" value="Enviar">
+                        </div>
+                </form>
+            </div>
             
     </main>
 
